@@ -1,19 +1,89 @@
-lifecare-website/
-│
-├── index.html (HOME PAGE)
-├── features.html (FEATURES PAGE)
-├── about.html (ABOUT PAGE)
-├── contact.html (CONTACT PAGE)
-├── dashboard.html (DASHBOARD)
-│
-├── css/
-│   ├── style.css (MAIN STYLES)
-│   ├── navbar.css (NAVIGATION)
-│   ├── dashboard.css (DASHBOARD STYLES)
-│
-├── js/
-│   ├── script.js (MAIN JAVASCRIPT)
-│   ├── dashboard.js (DASHBOARD LOGIC)
-│
-└── images/
-    └── (image files here)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare - Student Health & Life Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">LifeCare</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (HOME PAGE) -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>LifeCare</h1>
+                <p class="hero-subtitle">Your Student Health & Life Management Companion</p>
+                <p class="hero-description">
+                    LifeCare helps students stay healthy, organized, financially responsible, 
+                    and prepared for daily responsibilities through one secure and easy-to-use platform.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <p>Healthcare Illustration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES PREVIEW SECTION -->
+    <section class="features-preview">
+        <div class="container">
+            <h2>Why Choose LifeCare?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Health Management</h3>
+                    <p>Track medications, allergies, symptoms, and health records</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Task Management</h3>
+                    <p>Organize tasks, deadlines, and stay productive</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Finance Tracker</h3>
+                    <p>Monitor expenses and budget smartly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Duty Preparation</h3>
+                    <p>Perfect for nursing students - prepare with confidence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 LifeCare. All rights reserved.</p>
+            <p>Your trusted student companion for health and life management.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
